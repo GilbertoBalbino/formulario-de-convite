@@ -37,7 +37,7 @@
 
 #app {
     display: grid;
-    grid-template-columns: 67.3% 32.7%;
+    grid-template-columns: 32.7% 67.3%;
 
     height: 100vh;
     overflow: hidden;
