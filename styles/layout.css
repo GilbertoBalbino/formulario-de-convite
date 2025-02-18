@@ -1,0 +1,34 @@
+#app {
+    display: grid;
+    grid-template-columns: 32.8% 67.2%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    padding: 2rem;
+
+    background: url(../assets/images/Background.png) no-repeat center 40%;
+    background-size: cover;
+
+    
+    & .aside-container {
+        max-width: 25rem;
+        margin-left: auto;
+    }
+
+}
+
+
+main {
+    background-color: antiquewhite;
+
+    padding: 80px 130px;
+    overflow: auto;
+
+    & .main-container {
+        max-width: 35rem;
+        margin-right: auto;
+    }
+}

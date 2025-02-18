@@ -13,7 +13,7 @@
 <body>
   <div id="app">
     <aside>
-      <header>
+      <div class="aside-container">
         <div class="aside-image">
           <img src="assets/Logo.svg" alt="Ícone de festa">
         </div>
@@ -25,274 +25,276 @@
             Crie um convite digital para o seu evento
           </p>
         </div>
-      </header>
+      </div>
     </aside>
     <main>
-      <div class="title">
-        <h1>Crie seu evento</h1>
-      </div>
-      <form enctype="multipart/form-data">
-        <fieldset class="about-event">
-          <legend>
-          <img src="" alt="">
-          Sobre o evento
-          </legend>
-          <div class="input-wrapper">
-            <label for="event-title">Título</label>
-            <input id="event-title" 
-            type="text" 
-            name="event-title" 
-            placeholder="Nome do evento">
-          </div>
-          <div class="input-wrapper">
-            <label for="event-date-time-start">Início</label>
-            <input 
-            id="event-date-time-start" 
-            type="datetime-local"
-            name="event-date-time-start">
-          </div>
-          <div class="input-wrapper">
-            <label for="event-date-time-end">Fim</label>
-            <input 
-            id="event-date-time-end"
-            type="datetime-local"
-            name="event-date-time-end">
-          </div>
-          <div class="input-wrapper">
-            <label for="event-type">Tipo</label>
-            <input 
-            id="event-type"
-            type="radio"
-            name="event-type"
-            >
-            <input
-             id="event-type"
-             type="radio"
-             name="event-type">
-          </div>
-          <div class="input-wrapper">
-            <label for="local">Local
+      <div class="main-container">
+        <div class="title">
+          <h1>Crie seu evento</h1>
+        </div>
+        <form enctype="multipart/form-data">
+          <fieldset class="about-event">
+            <legend>
+            <img src="" alt="">
+            Sobre o evento
+            </legend>
+            <div class="input-wrapper">
+              <label for="event-title">Título</label>
+              <input id="event-title" 
+              type="text" 
+              name="event-title" 
+              placeholder="Nome do evento">
+            </div>
+            <div class="input-wrapper">
+              <label for="event-date-time-start">Início</label>
               <input 
-              id="local"
-              type="text"
-              name="local">
+              id="event-date-time-start" 
+              type="datetime-local"
+              name="event-date-time-start">
+            </div>
+            <div class="input-wrapper">
+              <label for="event-date-time-end">Fim</label>
+              <input 
+              id="event-date-time-end"
+              type="datetime-local"
+              name="event-date-time-end">
+            </div>
+            <div class="input-wrapper">
+              <label for="event-type">Tipo</label>
+              <input 
+              id="event-type"
+              type="radio"
+              name="event-type"
+              >
+              <input
+              id="event-type"
+              type="radio"
+              name="event-type">
+            </div>
+            <div class="input-wrapper">
+              <label for="local">Local
+                <input 
+                id="local"
+                type="text"
+                name="local">
+              </label>
+            </div>
+            <div class="textarea-wrapper">
+              <label for="description-event">Descrição</label>
+              <textarea
+              id="description-event"
+              name="description-event"
+              cols="60"
+              rows="8"
+              placeholder="Escreva sobre os detalhes do evento">
+              </textarea>
+            </div>
+          </fieldset>
+          <fieldset class="customization">
+            <legend>
+              <img src="" alt="">
+              Personalização
+            </legend>
+            <label for="main-color">
+              Cor principal
             </label>
-          </div>
-          <div class="textarea-wrapper">
-            <label for="description-event">Descrição</label>
-            <textarea
-            id="description-event"
-            name="description-event"
-            cols="60"
-            rows="8"
-            placeholder="Escreva sobre os detalhes do evento">
-            </textarea>
-          </div>
-        </fieldset>
-        <fieldset class="customization">
-          <legend>
-            <img src="" alt="">
-            Personalização
-          </legend>
-          <label for="main-color">
-            Cor principal
-          </label>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="brand-light"
-            value="var(--brand-light)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="navy"
-            value="var(--navy)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="purple"
-            value="var(--purple)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="fuschia"
-            value="var(--fuschia)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="pink"
-            value="var(--pink)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="red"
-            value="var(--danger)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="orange"
-            value="var(--orange)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="yellow"
-            value="var(--yellow)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="lime"
-            value="var(--lime)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="green"
-            value="var(--green)"
-            >
-          </div>
-          <div class="color-wrapper">
-            <input
-            id="main-color" 
-            type="color"
-            name="cyan"
-            value="var(--cyan)"
-            >
-          </div>
-          <label for="event-theme">
-            Tema do evento
-          </label>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <img src="" alt="">
-            <input type="radio">
-            <p>
-              text
-            </p>
-          </div>
-          <div class="input-wrapper">
-            <label for="style">
-              Estilo
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="brand-light"
+              value="var(--brand-light)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="navy"
+              value="var(--navy)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="purple"
+              value="var(--purple)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="fuschia"
+              value="var(--fuschia)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="pink"
+              value="var(--pink)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="red"
+              value="var(--danger)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="orange"
+              value="var(--orange)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="yellow"
+              value="var(--yellow)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="lime"
+              value="var(--lime)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="green"
+              value="var(--green)"
+              >
+            </div>
+            <div class="color-wrapper">
+              <input
+              id="main-color" 
+              type="color"
+              name="cyan"
+              value="var(--cyan)"
+              >
+            </div>
+            <label for="event-theme">
+              Tema do evento
             </label>
-            <input 
-            id="style"
-            type="range"
-            name="style"
-            >
-          </div>
-          <div class="dropfile-wrapper">
-            <input type="file">
-            <button>
-              Selecionar
-            </button>
-            <p>
-              Nenhum arquivo selecionado
-            </p>
-          </div>
-        </fieldset>
-      </form>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <img src="" alt="">
+              <input type="radio">
+              <p>
+                text
+              </p>
+            </div>
+            <div class="input-wrapper">
+              <label for="style">
+                Estilo
+              </label>
+              <input 
+              id="style"
+              type="range"
+              name="style"
+              >
+            </div>
+            <div class="dropfile-wrapper">
+              <input type="file">
+              <button>
+                Selecionar
+              </button>
+              <p>
+                Nenhum arquivo selecionado
+              </p>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </main>
   </div>
 </body>

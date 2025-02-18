@@ -32,18 +32,15 @@
 
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
-
 }
 
-#app {
-    display: grid;
-    grid-template-columns: 32.7% 67.3%;
-
-    height: 100vh;
+body {
     overflow: hidden;
 }
+
 
 .aside-text > h1 {
     font: 400 2.5rem "Leckerli One";
     color: var(--pink);
 }
+
