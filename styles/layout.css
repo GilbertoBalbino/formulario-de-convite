@@ -6,14 +6,16 @@
 }
 
 aside {
+
     padding: 2rem 2rem 34.5rem 2rem;
+    overflow: hidden;
 
     background: url(../assets/images/Background.png) no-repeat center;
-    background-size: cover;
-    height: 57.4rem;
+    background-size: 100% 100%;
+    min-height: 100vh;
     
     & .aside-container {
-        max-width: 25rem;
+        max-width: 21rem;
         margin-left: auto;
     }
 
@@ -21,12 +23,22 @@ aside {
 
 
 main {
-    background-color: antiquewhite;
-    padding: 80px 130px;
+    background-color: #72a8df;
     overflow: auto;
+    height: 100vh;
 
     & .main-container {
-        max-width: 35rem;
         margin-right: auto;
+
+        & .title {
+            margin-top: 5rem;
+            margin-inline: 8.125rem;
+            max-width: 35rem;
+        }
+
+        & form {
+            margin-inline: 8.125rem;
+        }
+        
     }
 }
