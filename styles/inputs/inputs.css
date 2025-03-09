@@ -1,15 +1,37 @@
-form {
-    appearance: none;
+input, textarea {
+  border: 1px solid #2B2F33;
+  border-radius: .5rem;
 }
 
-.about-event input {
-    background-color: var(--input-base);
-    border-style: 0.1rem solid var(--input-base);
-    border-radius: 1rem;
-  /* Corrigir a cor do outline */
-    outline-color: #e22a2a;
+.input-wrapper {
+  & input {
+  appearance: none;
+  }
+}
 
-    display: grid;
-    /* ARRUMAR ESSE GAP */
-    gap: 1rem;
+form {
+  margin-top: 3rem;
+  margin-inline: 8.125rem;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font: 700 1.125rem "Baloo 2";
+  color: var(--text-heading);
+}
+
+.about-event input, textarea {
+  background-color: var(--input-base);
+  /* Corrigir a cor do outline */
+  outline-color: #e22a2a;
+  outline-offset: 0.1rem;
+  padding-block: 0;
+
+
+  display: grid;
+  /* ARRUMAR ESSE GAP */
+  gap: 1.5rem;
 }

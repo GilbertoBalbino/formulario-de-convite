@@ -38,6 +38,8 @@ main {
 
     & .main-container {
         margin-right: auto;
+        display: flex;
+        flex-direction: column;
 
         & .title {
             margin-top: 5rem;
@@ -45,15 +47,6 @@ main {
             max-width: 35rem;
             font: 600 1rem "Baloo 2";
             color: var(--text-heading);
-        }
-
-        & form {
-            margin-inline: 8.125rem;
-
-            & legend {
-                font: 700 1.125rem "Baloo 2";
-                color: var(--text-heading);
-            }
         }
     }
 }
