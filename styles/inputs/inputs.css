@@ -1,3 +1,15 @@
-input {
+form {
+    appearance: none;
+}
 
+.about-event input {
+    background-color: var(--input-base);
+    border-style: 0.1rem solid var(--input-base);
+    border-radius: 1rem;
+  /* Corrigir a cor do outline */
+    outline-color: #e22a2a;
+
+    display: grid;
+    /* ARRUMAR ESSE GAP */
+    gap: 1rem;
 }
