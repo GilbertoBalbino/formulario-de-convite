@@ -45,7 +45,7 @@ main {
             margin-top: 5rem;
             margin-inline: 8.125rem;
             max-width: 35rem;
-            font: 600 1rem "Baloo 2";
+            font: 700 1.75rem "Baloo 2";
             color: var(--text-heading);
         }
     }
