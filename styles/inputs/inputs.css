@@ -23,24 +23,8 @@ legend {
   color: var(--text-heading);
 }
 
-.about-event {
-  display: grid;
-  /* ARRUMAR ESSE GAP */
-  gap: 1.5rem;
-  /* Usar Grid area nas divs */
-  grid-column: 1fr 1fr;
-
-}
-
-.about-event input, textarea {
-  background-color: var(--input-base);
-  /* Corrigir a cor do outline */
-  outline-color: #e22a2a;
-  outline-offset: 0.1rem;
-}
-
 label {
-  font: 400 .875rem;
+  font: 400 .875rem "Open Sans";
   color: var(--text-body);
 }
 

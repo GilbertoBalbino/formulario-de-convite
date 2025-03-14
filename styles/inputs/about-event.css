@@ -1,0 +1,44 @@
+.about-event-title {
+ padding-bottom: 1.5rem;
+ display: flex;
+ align-items: center;
+ gap: .75rem;
+}
+
+.about-event-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4.93rem 4.93rem 4.93rem 10.43rem;
+  gap: 1rem;
+
+  & input{
+    height: 60%;
+  }
+
+  & label {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+  }
+
+  & .title-grid {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  & .textarea-grid {
+    grid-column: span 2;
+  }
+}
+
+.radio-wrapper {
+  input[type="radio"] {
+    display: none;
+  }
+}
+
+.about-event input, textarea {
+  background-color: var(--input-base);
+  width: 100%;
+  /* Corrigir a cor do outline */
+  /* outline-color: #e22a2a;
+  outline-offset: 0.1rem; */
+}
