@@ -14,9 +14,11 @@
   <div id="app">
     <aside>
       <div class="aside-container">
+
         <div class="aside-image">
           <img src="assets/Logo.svg" alt="Ícone de festa">
         </div>
+
         <div class="aside-text">
           <h1>
             Festivite
@@ -25,65 +27,91 @@
             Crie um convite digital para o seu evento
           </p>
         </div>
+
       </div>
     </aside>
+
     <main>
       <div class="main-container">
         <div class="title">
           <h1>Crie seu convite</h1>
         </div>
+
         <form enctype="multipart/form-data">
           <fieldset class="about-event">
             <div class="about-event-title">
+
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25C8.41421 1.25 8.75 1.58579 8.75 2V3.25H15.25V2C15.25 1.58579 15.5858 1.25 16 1.25C16.4142 1.25 16.75 1.58579 16.75 2V3.25H19C20.5188 3.25 21.75 4.48122 21.75 6V20C21.75 21.5188 20.5188 22.75 19 22.75H5C3.48122 22.75 2.25 21.5188 2.25 20V6C2.25 4.48122 3.48122 3.25 5 3.25H7.25V2C7.25 1.58579 7.58579 1.25 8 1.25ZM7.25 4.75H5C4.30964 4.75 3.75 5.30964 3.75 6V9.25H20.25V6C20.25 5.30964 19.6904 4.75 19 4.75H16.75V6C16.75 6.41421 16.4142 6.75 16 6.75C15.5858 6.75 15.25 6.41421 15.25 6V4.75H8.75V6C8.75 6.41421 8.41421 6.75 8 6.75C7.58579 6.75 7.25 6.41421 7.25 6V4.75ZM20.25 10.75H3.75V20C3.75 20.6904 4.30964 21.25 5 21.25H19C19.6904 21.25 20.25 20.6904 20.25 20V10.75Z" fill="#869198"/>
               </svg>
-              <legend>Sobre o evento</legend>
+
+              <legend>
+                Sobre o evento
+              </legend>
             </div>
+
             <div class="about-event-wrapper">
               <div class="input-wrapper title-grid">
-                <label for="event-title">Título</label>
+                <label for="event-title">
+                  Título
+                </label>
+
                 <input id="event-title" 
                 type="text" 
                 name="event-title" 
                 placeholder="Nome do evento">
               </div>
+
               <div class="input-wrapper">
-                <label for="event-date-time-start">Início</label>
+                <label for="event-date-time-start">
+                  Início
+                </label>
+
                 <input 
                 id="event-date-time-start" 
                 type="datetime-local"
                 name="event-date-time-start">
               </div>
-              <div class="input-wrapper">
-                <label for="event-date-time-end">Fim</label>
+
+              <div class="input-wrapper content">
+                <label for="event-date-time-end">Fim</label>                 
                 <input 
                 id="event-date-time-end"
                 type="datetime-local"
                 name="event-date-time-end">
               </div>
+
               <div class="radio-wrapper">
-                <label for="event-type">Tipo</label>
+                <label for="event-type">
+                  Tipo
+                </label>
+
                 <input 
                 id="event-type"
                 type="radio"
                 name="event-type"
                 >
+
                 <input
                 id="event-type"
                 type="radio"
                 name="event-type">
               </div>
               <div class="input-wrapper">
-                <label for="local">Local
-                  <input 
-                  id="local"
-                  type="text"
-                  name="local">
+                <label for="local">
+                  Local
                 </label>
+
+                <input 
+                id="local"
+                type="text"
+                name="local">
               </div>
               <div class="textarea-wrapper textarea-grid">
-                <label for="description-event">Descrição</label>
+                <label for="description-event">
+                  Descrição
+                </label>
+
                 <textarea
                 id="description-event"
                 name="description-event"
