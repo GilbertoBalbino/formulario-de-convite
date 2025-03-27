@@ -74,16 +74,9 @@ input[type="datetime-local"] {
       column-gap: .25rem;
     }
     & .inner-wrapper {
-      display: flex;
-    }
-    & .radio-btn {
-      padding: 0;
-      display: flex;
-      gap: .5rem;
-      min-width: 100%;
-      svg {
-        align-self: center;
-      }
+      display: grid;
+      align-items: center;
+      justify-items: center;
     }
 }
 
@@ -92,9 +85,14 @@ input[type="radio"] {
 }
 
 .about-event [type="radio"]:checked + label {
-      color: var(--text-heading);
-      background-color: var(--shape-button);
-      border-radius: .5rem;
+  color: var(--text-heading);
+}
+
+.inner-wrapper {
+  &:has(:checked) {
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+  }
 }
 
 .textarea-wrapper textarea::placeholder {
