@@ -4,7 +4,6 @@
   /* Corrigir a cor do outline */
   /* outline-color: #e22a2a;
   outline-offset: 0.1rem; */
-  zoom: 80%;
 }
 
 .about-event-title {
@@ -74,18 +73,29 @@ input[type="datetime-local"] {
       column-gap: .25rem;
     }
     & .inner-wrapper {
-      display: grid;
+      display: flex;
+      gap: .5rem;
       align-items: center;
-      justify-items: center;
+      justify-content: center;
+    }
+    & .radio-btn {
+      padding: 0;
     }
 }
 
 input[type="radio"] {
     display: none;
+    inset: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.about-event [type="radio"]:checked + label {
+.about-event [type="radio"]:checked + svg > path {
+  fill: var(--brand-light);
+}
+.about-event [type="radio"]:checked + svg + label {
   color: var(--text-heading);
+  font-weight: 600;
 }
 
 .inner-wrapper {
